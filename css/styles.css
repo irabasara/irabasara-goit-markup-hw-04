@@ -54,6 +54,7 @@ section {
   padding-bottom: 120px;
   padding-top: 120px;
 }
+
 /* ===============root===============  */
 :root {
   --cloud-light-background: #f4f4fd;
@@ -160,7 +161,15 @@ section {
   text-align: center;
   padding-bottom: 188px;
   padding-top: 188px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
 .hero-text {
   font-weight: 700;
   font-size: 56px;
@@ -246,6 +255,69 @@ section {
 .team-title {
   margin-bottom: 8px;
 }
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--iris-brand-color);
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+.social-list-icon {
+  fill: var(--cloud-light-background);
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--hover-ocean);
+}
+/* ===========customers============= */
+.customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--primary-text);
+  margin-bottom: 72px;
+}
+.customers-conteiner {
+  padding-top: 130px;
+}
+.customers-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.customers-list-icon {
+  fill: var(--light-slate-subtle);
+}
+.customers-list-icon:hover,
+.customers-list-icon:focus {
+  fill: var(--hover-ocean);
+}
+.customers-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid var(--light-slate-subtle);
+  border-radius: 4px;
+}
+.customers-list-link:hover,
+.customers-list-link:focus {
+  border: 1px solid var(--hover-ocean);
+  border-radius: 4px;
+}
 /* ===========footer============= */
 .footer-container {
   background-color: var(--primary-text);
@@ -276,6 +348,23 @@ section {
 }
 .footer-container-logo {
   width: 264px;
+}
+
+.footer-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+
+  color: var(--white);
+}
+.footer-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
 }
 
 /* ===========portfolio============= */
