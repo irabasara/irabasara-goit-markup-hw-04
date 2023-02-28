@@ -359,6 +359,11 @@ section {
 
   color: var(--white);
 }
+.footer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .footer-list-link {
   display: flex;
   justify-content: center;
@@ -366,7 +371,9 @@ section {
   width: 40px;
   height: 40px;
 }
-
+.footer-flex-container {
+  display: flex;
+}
 /* ===========portfolio============= */
 /* ===========portfolio============= */
 /* ===========portfolio============= */
