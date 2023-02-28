@@ -219,6 +219,21 @@ section {
 .feature-subtitle {
   min-width: 264px;
 }
+.feature-list-prymiry {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feature-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 112px;
+  gap: 24px;
+  background: var(--cloud-light-background);
+  border-radius: 4px;
+}
 /* ===============works==================== */
 .work-contanier {
   padding-top: 0;
@@ -358,11 +373,11 @@ section {
   letter-spacing: 0.02em;
 
   color: var(--white);
+  margin-bottom: 16px;
 }
 .footer-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
 }
 .footer-list-link {
   display: flex;
@@ -370,9 +385,22 @@ section {
   align-items: center;
   width: 40px;
   height: 40px;
+  border-radius: 50%;
+  background-color: var(--text-color-slate);
+}
+.footer-list-item:not(:last-child) {
+  margin-right: 16px;
 }
 .footer-flex-container {
   display: flex;
+  align-items: center;
+  gap: 120px;
+}
+.footer-list-icon {
+  fill: var(--cloud-light-background);
+}
+.social-media-container {
+  width: 280px;
 }
 /* ===========portfolio============= */
 /* ===========portfolio============= */
