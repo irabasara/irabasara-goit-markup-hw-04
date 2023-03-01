@@ -168,6 +168,10 @@ section {
     url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-text {
@@ -211,8 +215,7 @@ section {
 .feature-list:not(:last-child) {
   margin-right: 24px;
 }
-.feature-list {
-}
+
 .feature-text {
   margin-bottom: 8px;
   margin-top: 8px;
@@ -229,14 +232,11 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 264px;
   height: 112px;
-  gap: 24px;
   background: var(--cloud-light-background);
   border-radius: 4px;
 }
-.feature-list-icon {
-}
+
 /* ===============works==================== */
 .work-contanier {
   padding-top: 0;
@@ -328,7 +328,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 168px;
+
   height: 88px;
   border: 1px solid var(--light-slate-subtle);
   border-radius: 4px;
@@ -337,6 +337,9 @@ section {
 .customers-list-link:focus {
   border: 1px solid var(--hover-ocean);
   border-radius: 4px;
+}
+.customers-list-item {
+  width: calc((100% - 120px) / 6);
 }
 /* ===========footer============= */
 .footer-container {
@@ -382,7 +385,6 @@ section {
 }
 .footer-list {
   display: flex;
-  justify-content: flex-start;
 }
 .footer-list-link {
   display: flex;
@@ -403,13 +405,13 @@ section {
 .footer-flex-container {
   display: flex;
   align-items: center;
-  gap: 120px;
 }
 .footer-list-icon {
   fill: var(--cloud-light-background);
 }
 .social-media-container {
   width: 280px;
+  margin-left: 120px;
 }
 /* ===========portfolio============= */
 /* ===========portfolio============= */
@@ -434,6 +436,8 @@ section {
 .filter-btn:focus {
   background-color: var(--hover-ocean);
   color: var(--white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .btn-container {
   display: flex;
@@ -451,8 +455,11 @@ section {
 .portfolio-photo-cards {
   flex-basis: calc((100% - 48px) / 3);
 }
-.portfolio-photo-cards:hover,
-.portfolio-photo-cards:focus {
+.portfolio-hover-link {
+  display: block;
+}
+.portfolio-hover-link:hover,
+.portfolio-hover-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
