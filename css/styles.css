@@ -320,10 +320,10 @@ section {
 .customers-list-icon {
   fill: var(--light-slate-subtle);
 }
-.customers-list-icon:hover,
+/* .customers-list-icon:hover,
 .customers-list-icon:focus {
   fill: var(--hover-ocean);
-}
+} */
 .customers-list-link {
   display: flex;
   justify-content: center;
@@ -337,6 +337,9 @@ section {
 .customers-list-link:focus {
   border: 1px solid var(--hover-ocean);
   border-radius: 4px;
+}
+.customers-list-link:hover .customers-list-icon {
+  fill: var(--hover-ocean);
 }
 .customers-list-item {
   width: calc((100% - 120px) / 6);
